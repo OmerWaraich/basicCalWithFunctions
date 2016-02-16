@@ -10,35 +10,35 @@ char op;
 printf("Please enter operation + , - , * , / ");
 scanf("%s", &op);
 switch(op){
-	case '+':
-		printf("Please enter first digit (Add Function) : ");
-		scanf("%d", &fNum);
-		printf("Please enter second digit (Add Function) : ");
-		scanf("%d", &sNum);
-		printf(" %d + %d = %d", fNum, sNum, add(fNum , sNum));
-		break;
+case '+':
+	printf("Please enter first digit (Add Function) : ");
+        scanf("%d", &fNum);
+	printf("Please enter second digit (Add Function) : ");
+	scanf("%d", &sNum);
+	printf(" %d + %d = %d", fNum, sNum, add(fNum , sNum));
+	break;
 	
-	case '-':
-		printf("Please enter first digit (Subtract Function) : ");
-		scanf("%d", &fNum);
-		printf("Please enter second digit (Subtract Function) : ");
-		scanf("%d", &sNum);
-		printf("%d - %d = %d", fNum, sNum, sub(fNum, sNum));
-	
-	case '*':
-		printf("Please enter first digit (Multiply Function) : ");
-		scanf("%d",&fNum);
-		printf("Please enter second digit (Multiply Function) : ");
-		scanf("%d",&sNum);
-		printf("%d * %d = %d", fNum, sNum, mult(fNum, sNum));
-	case '/':
-		printf("Please enter first digit (Divide Function) : ");
-		scanf("%d",&fNum);
-		printf("Please enter second digit (Divide Function) : ");
-		scanf("%d",&sNum);
-		printf("%f / %f = %f", (float)sNum,(float)sNum, divide(fNum,sNum));
-		
-		
+case '-':
+	printf("Please enter first digit (Subtract Function) : ");
+	scanf("%d", &fNum);
+	printf("Please enter second digit (Subtract Function) : ");
+	scanf("%d", &sNum);
+	printf("%d - %d = %d", fNum, sNum, sub(fNum, sNum));
+	break;
+case '*':
+	printf("Please enter first digit (Multiply Function) : ");
+	scanf("%d",&fNum);
+	printf("Please enter second digit (Multiply Function) : ");
+	scanf("%d",&sNum);
+	printf("%d * %d = %d", fNum, sNum, mult(fNum, sNum));
+	break;
+case '/':
+	printf("Please enter first digit (Divide Function) : ");
+	scanf("%d",&fNum);
+	printf("Please enter second digit (Divide Function) : ");
+	scanf("%d",&sNum);
+	printf("%f / %f = %f", (float)sNum,(float)sNum, divide(fNum,sNum));
+	break;
     }
 }
 //Addition Function
