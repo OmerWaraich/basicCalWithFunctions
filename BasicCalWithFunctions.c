@@ -1,9 +1,11 @@
 #include<stdio.h>
 #include<stdlib.h>
+
 int add (int i, int j);
 int sub (int i, int j);
 int mult(int i, int j);
 float divide(int i, int j);
+
 int main(){
 int fNum,sNum;
 char op;
@@ -17,7 +19,6 @@ case '+':
 	scanf("%d", &sNum);
 	printf(" %d + %d = %d", fNum, sNum, add(fNum , sNum));
 	break;
-	
 case '-':
 	printf("Please enter first digit (Subtract Function) : ");
 	scanf("%d", &fNum);
@@ -52,7 +53,7 @@ int sub (int i, int j){
 	int z;
 	z = i - j;
 	return z;
-	}
+}
 //Multiplication Function
 int mult(int i, int j){
 	int z;
